@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 150%;
+}
+
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: rgb(1, 8, 15);
+    background-position: 50vh;
+
+}
+
+body {
+    background-image: url("assets/hero-bg.png");
+    background-repeat: no-repeat;
+    padding: auto;
+}
+
+.iconeSelo {
+    margin: 0.65rem;
+    padding-top: 0.30rem;
+    width: 9.5%;
+    position: absolute;
+}
+
+.iconeSelo {
+    animation: pulsar 1s ease-in-out infinite;
+}
+
+@keyframes pulsar {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.seloCircle {
+    margin: 0.60rem;
+    padding-top: 0.29rem;
+    width: 10%;
+    position: relative;
+}
+
+.seloCircle {
+    animation: pulsar 1s ease-in-out infinite;
+}
+
+@keyframes pulsar {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.decodificador__display {
+    width: 46%;
+    display: flex;
+    flex-direction: column;
+    height: 74vh;
+    margin-top: 10px;
+}
+
+.display__mensagem {
+    width: 50%;
+}
+
+.decodificador{
+    display: flex;
+    margin-bottom: 3.2rem;
+    margin-left: 5rem;
+}
+
+.display__textArea {
+    background: rgba(56, 146, 255, 0.075);
+    border: 0.5px solid #32a7e5;
+    border-radius: 0.75rem;
+    text-transform: lowercase;
+    color: aqua;
+    resize: none;
+    height: 50%;
+}
+
+::placeholder { color: rgb(0, 200, 120);
+    .text-area:focus {
+        outline: none;
+    }
+}
+
+.display__mensagem {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 150vh;
+}
+
+.mensagem {
+    background:rgba(56, 146, 255, 0.075);
+    border: 0.01rem solid #32a7e5;
+    border-radius: 1.5rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(assets/luri-circles.1720710818.svg);
+    background-size: 100%;
+    margin-left: 10rem;
+    color: aqua;
+}
+
+::placeholder {
+    .mensagem:focus {
+        background-image: url(assets/luri-circles.1720710818.svg);
+        font-size: 0.9rem;
+        transition: 0.3s ease-in-out;
+    }
+}
+
+.mensagem:focus {
+    background-image: url(assets/luri-header.1720710818.svg);
+    outline: none;
+}
+
+.botoes {
+    display: flex;
+    gap: 0.1rem;    
+}
+
+.botoes button {
+    border-radius: 1rem;
+    width: 100%;
+    max-width: 10rem;
+    padding: 0.4rem;
+    font-size: .8rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.btn_desencriptar {
+    background: rgba(56, 146, 255, 0.075);
+    border: 1px solid #32a7e5;
+    border-radius: 1.5rem;
+    color: rgb(0, 200, 120);
+    cursor: pointer;
+    height: 2.2rem;
+    margin-left: 2.1rem;
+    width: 15rem;
+}
+
+.btn_encriptar {
+    background-color: rgb(0, 200, 120);
+    border: 1px solid #32a7e5;
+    border-radius: 1.5rem;
+    color: rgb(3, 30, 42);
+    cursor: pointer;
+    height: 2.2rem;
+    width: 15rem;
+}
+
+.btn_copiar {
+    background: rgb(0, 200, 120);
+    border: 1px solid #32a7e5;
+    border-radius: 1.5rem;
+    color: rgb(3, 30, 42);
+    cursor: pointer;
+    height: 2.2rem;
+    margin-left: 14rem;
+    position: 50rem;
+    width: 9rem;
+    bottom: 0.5rem;
+    transition: 0.3s ease-in-out;
+}
+
+.informacao {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    margin-bottom: 0.5rem;
+    color: aqua;
+
+    animation: pulsar 1s ease-in-out infinite;
+}
+
+@keyframes pulsar {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+    background-color: #32a7e5;
+    color: rgb(3, 30, 42);
+
+    a{
+        font-size: 0.9rem;
+        text-decoration: none;
+    }
+    
+}

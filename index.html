@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="assets/icon-luri-mobile.1720710817.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador - Alura</title>
+</head>
+<body> 
+     <header class="logo">
+            <img class="iconeSelo" src="./assets/icon_selo.1720710817 (1).svg" alt="Icone selo alura">
+            <img class="seloCircle" src="./assets/selo-circle.1720710817.svg" alt="Selo circulo alura">
+     </header>
+    <main class="decodificador">
+        <section class="decodificador__display">
+            <textarea class="display__textArea" cols="41" rows="4" placeholder="Digite seu texto"></textarea>
+            <div class="informacao">
+                <img src="./assets/bi_exclamation-circle-fill.svg">
+                <span style="font-size: 0.9rem;">Apenas letras minúsculas e sem acento</span>
+            </div>
+            <div class="botoes">
+                <button class="btn_encriptar" onclick="btnEncriptar()">Criptografar</button>
+                <button class="btn_desencriptar" onclick="btnDesencriptar()">Descriptografar</button>
+            </div>
+        </section>
+        <section class="display__mensagem">
+            <textarea class="mensagem" cols="20" rows="10" placeholder=" Nenhuma mensagem encontrada"></textarea>
+            <div>
+                <button class="btn_copiar" onclick="btnCopiar()">Copiar</button> 
+            </div>
+        </section>
+    </main>
+    <footer class="footer" >
+        <span style="font-size: 0.9rem;">©Copyright - 2024 | Desenvolvido em parceria com <a href="https://www.alura.com.br/"> Alura </a> | Por Victor Pignataro</span>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
